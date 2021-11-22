@@ -1,0 +1,15 @@
+
+Assignment1:
+
+A Bank is building Microservices Based application with  other 2 services 
+in the system. Customer service should have following functionality.
+
+1.CustomerProducer Service can add customers  to the databse with following details.
+Id,Name,Age,Address ,typeofAccount.
+Service should be able to add, update anremove and list customers.
+
+2.CustomerConsumerClient service must be able to list available customer in database.
+
+Implement discovery Server to register both  the services.
+
+
