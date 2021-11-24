@@ -1,0 +1,107 @@
+SQL -> Mysql/oracle/db2 containers
+DDL, DML, DCL, TCL, DQL
+
+DDL:
+
+create database revaturefsd1;
+
+use revaturefsd1;
+
+show tables;
+
+create table customer(id int,name varchar(20));
+
+create table customernew(id int,name varchar(20),address varchar(20));
+
+drop table customer;
+
+describe customernew;
+
+alter table customernew add city varchar(20);
+
+alter table customernew drop column city;
+
+create table customer1234 as select * from customernew; 
+select * from customer1234;
+
+DML:
+
+
+insert into customer1234(id) values(234);
+insert into customer1234(name) values("ram123");
+insert into customer1234 values(300,'Sai');
+insert into customer1234(name,id) values('sai300',302);
+update customer1234 set name='xxx';
+update customer1234 set name='xxx' where id=234;
+
+alter table customernew modify name varchar(50);
+
+insert into customernew values(101,'ram'),(102,'raj'),(103,'kiran');
+
+select * from customernew;
+
+truncate table customernew;
+
+
+DCL:  root, root ....
+grant insert/update/select/delete on revature.table1 to user
+grant delete on revature1.table2 to user2
+
+...
+revoke  delete on revature1.table2 from user2
+
+revoke all on db.table from user3;
+
+TCL:   rollback, commit ,savepoint
+
+update table set col=val where condition;
+..
+...
+savepoint a;
+..
+delete
+..
+savepoint b;
+
+insert
+...
+savepoint c;
+.
+
+rollback to c;  // b    a
+
+rollback   / commit
+
+database logical objects:
+Table -> db logical
+view?
+index?   
+
+order by
+select distint(deptname)  from dept;
+
+select * from table order by 
+
+select sum(salary) from employee;
+10
+20
+20
+10
+20
+30
+10
+
+select deptid,sum(salary) from employee group by deptid having deptid=10;
+10
+
+20
+
+30
+
+
+sum(), avg(), max(),min(),count()
+trim()
+
+
+
+

@@ -1,0 +1,12 @@
+show tables;
+select * from course;
+set autocommit=false;
+insert into course values(229,'spring',2),(221,'rest',2),(223,'webservices',4);
+delete from course where cid=21;
+savepoint a;
+delete from course where cid=221;
+savepoint b;
+delete from course where cid=229;
+savepoint c;
+rollback to a;
+commit;

@@ -1,0 +1,36 @@
+create database ems;
+
+use ems;
+
+CREATE  TABLE
+ `ems`.`emp_details` (  `emp_id` INT NOT NULL ,  
+			`first_name` VARCHAR(45) NULL ,  
+			`last_name` VARCHAR(45) NULL,
+			  `supervisor_id` INT NULL ,  
+			`join_date` DATE NULL ,  
+			`salary` DECIMAL(10,2) NULL ,  
+			`dept_no` INT NULL ,
+  			`designation_id` INT NULL ,  
+			`skill_id` INT NULL ,  PRIMARY KEY (`emp_id`) );
+
+CREATE  TABLE 
+	`ems`.`designation` (  `designation_id` VARCHAR(5) NOT NULL ,  
+				`designation_name` VARCHAR(45) NULL ,  PRIMARY KEY (`designation_id`) );
+
+CREATE  TABLE 
+	`ems`.`dept_details` (  `dept_no` INT NOT NULL ,  
+				`dept_name` VARCHAR(45) NULL ,  PRIMARY KEY (`dept_no`) );
+
+CREATE  TABLE 
+	`ems`.`project_details` (  	`proj_id` INT NOT NULL ,  
+					`proj_name` VARCHAR(45) NULL ,  
+					`project_lead` INT NULL,  PRIMARY KEY (`proj_id`) );
+
+CREATE  TABLE 
+	`ems`.`role` (  `role_id` INT NOT NULL ,  `role_name` VARCHAR(45) NULL ,  PRIMARY KEY (`role_id`) );
+
+CREATE  TABLE 
+	`ems`.`project_alloc` (  `role_id` INT NOT NULL ,  `proj_id` INT NOT NULL ,  `emp_id` INT NOT NULL );
+
+CREATE  TABLE 
+	`ems`.`skill` (  `skill_id` INT NOT NULL ,  `skill_name` VARCHAR(45) NULL ,  `proficiency_level` VARCHAR(45) NULL ,  `year_of_experience` INT NULL ,  PRIMARY KEY (`skill_id`) );

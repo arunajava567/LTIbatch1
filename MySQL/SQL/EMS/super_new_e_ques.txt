@@ -1,0 +1,85 @@
+1.Write a query to display the employee ID, first name of the supervisors who has the maximum number of direct reportees (employees).
+Hint: Assume, employee A has 2 reportees, B has 3 reportees and C has 1 reportee. Here, Employee B's employee ID and first name should be displayed
+
+2.Write a query to find all employees who report to an employee 'Ryan' and who are not in any project and display the employee id, employee first name, designation ID, join date and supervisor id of those employees.
+Hint: Employees who are not currently in projects means they either got released from the project or not at all allocated to any project.
+
+3.Write a query to display employee id,first name, last name, salary and designation id of employees who is getting maximum salary in each designation. 
+Don’t display the details of designation VP and sort the records based on designation in ascending order
+
+4.Write to query to find for each project, find the number of employees who have either an 'OOP' or 'TEST' skill and display the project name and number of employees. 
+Hint: Use "NO_OF_EMPLOYEE" as alias name for displaying the number of employees.
+
+5.Write a query to find all peoples who have either a 'JAV' or 'DES' skills and either 'E1' or 'E2' proficiency levels and 
+display the employee ID, employee first name, designation ID, skill ID, proficiency level and years of experience of those peoples.
+
+6.Write a query to display the first name, last name, salary, bonus (calculated 3 percent bonus per salary value) and 
+weekly salary (including bonus) of all employees and round the weekly salary to remove the decimals. Sort the result based on the salary in descending order. 
+Hint: Formula for calculating bonus is salary*.03 and for calculating weekly salary is (salary/52) + ((salary*.03)/52)
+Use "BONUS" as alias name for displaying bonus and "WEEKLY_SALARY" as alias name for displaying the weekly salary with bonus.
+
+7.Write a query to display the employee id and employee name of employee who is a developer in facebook developer team.
+Display the employee name in below format ie first character of first name dot last name. 
+Example Assume first name is "Ram" and last name is "Kumar" then employee name will be "R.Kumar". 
+Hint: Use "EMPLOYEE_NAME" as alias name for displaying employee name.
+Example, 
+emp_id    EMPLOYEE_NAME
+1000        R.Kumar
+
+8.Write a query to find the all employees who are not currently in projects and are whose skill is 'TEST' and proficiency level is 'E0' and 
+display the employee ID, employee first name, skill id, proficiency level and experience in years of those employees. 
+Hint: Employees who are not currently in projects means they either got released from the project or not at all allocated to any project.
+
+9.Write a query to find all people who have a 'JAV' skill and 'E2' proficiency level and display the distinct employee first name, 
+project ID, role ID, skill ID, proficiency level and release date of those peoples who are currently in projects.
+Hint: Employees who are  currently in projects means they should not have got released.
+
+10.Write a query to display the designation id, designation name and total salary of the employees who joined the company after 1-JAN-2004 whose total salary is greater than 50000 for each designation. 
+Hint: Use TOTALSALARY as alias name for displaying the total salary of the employees for each designation.
+
+11.Write a query to find the all employees who are currently in projects and whose designation is 'C2' and display the employee ID, employee first name, designation ID, join date and supervisor ID of the employees. 
+Hint: Employees who are currently in projects means they are not released from project.
+
+12.Write a query to display the employee id, employee first name, last name, designation id, join date and  supervisor id of all employees who report to an employee 'Ryan' and joined the company between&nbsp; '01-JAN-07' and '01-JAN-09' and who are not currently in any project (got released from projects). 
+Hint: Employees who are not currently in projects means they either got released from the project or not at all allocated to any project.
+
+13.Write a query to display the employee ID, employee first name,  supervisor first name, designation name, project ID,  project name, role id and role name of all employees for all the current and previous projects of all employees reporting to an employee 'Ram'.
+Hint: Use SUPERVISOR_NAME as alias name for displaying the supervisor first name.
+
+14.Write a query to display the employee id, employee first name, project ID and project name of the employees who have worked on the same project in the most number of roles.
+
+15.Write a query to display the name, join date of the employees whose join date is greater than 01-JAN-2004 and sort the result based on the employee name in ascending order.  
+Display the name as, First Character of first name, Dot, Last Name.
+Example: Assume first name is "Ram" and last name is "Kumar" then display employee name as "R.Kumar"
+Hint: Use theEMPLOYEE_NAME as alias name for displaying the employees name.
+
+16.Write a query to display the distinct employee id, employee first name, designation name and supervisor ID of all employees who work for the project "Google Testing". 
+Hint: There can be more than one employee working in same project with multiple roles, display their details only once.
+
+17.Write a query to find the employee Id, first name, designation name, project name and role name of the employees who are second level reportees of a given employee 'Mark'. 
+Example, Assume, employee 'A' reports to "Mark" and employee "B" and "C" reports to employee "A". Here, display the above details for employee "B" and "C".
+
+18.Write a query to find the employees who have not worked for any projects till now and who are second level reportees of a given employee 'Mark'. Display the employee Id, first name and designation name of the employees.
+Hint: Display all the employee details who have not working/worked for any projects. 
+Example, Assume, employee 'A' reports to "Mark" and employee "B" and "C" reports to employee "A". Here, display the above details for employee "B" and "C".
+
+19.Write a query to display the designation id, total salary for designation C1,  total salary for designation C2,  total salary for designation C3,  total salary for designation C4,  total salary for designation VP and  total salary for all designations in the below format. 
+
+DESIGNATION_ID DESGN_C1 DESGN_C2 DESGN_C3 DESGN_C4 DESGN_VP TOTAL
+C1 196000 0 0 0 0 196000
+C2 0 78000 0 0 0 78000
+C3 0 0 96000 0 0 96000
+C4 0 0 0 110000 0 110000
+VP 0 0 0 0 140000 140000
+
+Hint: Use DESGN_C1 as alias name for displaying total salary for designation C1 and DESGN_C2 for displaying total salary for designation C2 and DESGN_C3 for displaying, total salary for designation C3 and DESGN_C4 and for displaying total salary for designation C4 and DESGN_VP and for displaying total salary for designation VP and TOTAL and for displaying total salary.
+
+20.Write a query to display employee id,first name, last name,designation name and skill name of all the employees irrespective of skills available. If no skills are available then display it as "N/A" for that particular employee. If  an employee has 2 skills then display both the records. Sort the records based on designation name in descending order.
+Hint:Use SKILL_NAME as alias name for skill name column.
+
+21.Write a query to display the employee id, employee first name, designation name, supervisor id, supervisor first name and supervisor designation ID of all employees including employees who does not have supervisor and sort them by employee designation name in ascending order. 
+Hint: Use "SUPERVISOR_NAME" as alias name for displaying the supervisor first name and "SUPERVISOR_DESIGNATION" as alias name for displaying the supervisor designation ID
+
+
+
+
