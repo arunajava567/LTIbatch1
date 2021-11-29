@@ -1,0 +1,7 @@
+
+
+while( i<=10)
+{
+  document.writeln(i);
+i++;
+}

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The HTML5 audio Element</title>
+</head>
+<body>
+	<audio controls="controls" src="/examples/audio/birds.mp3">
+        Your browser does not support the HTML5 audio element.
+    </audio>
+</body>
+</html>                             

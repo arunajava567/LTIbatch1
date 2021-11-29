@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of HTML5 Web Worker</title>
+<script type="text/javascript">
+    if(window.Worker){
+        var worker;
+      
+        worker = new Worker("work.js");
+        
+        // Fire onMessage event handler
+        worker.onmessage = function(event){
+            document.getElementById("result").innerHTML = event.data;
+        };
+    } else{
+        alert("Sorry, your browser do not support web worker.");
+    }
+</script>
+</head>
+<body>
+    <div id="result">
+        <!--Received messages will be inserted here-->
+    </div>
+</body>
+</html>                            

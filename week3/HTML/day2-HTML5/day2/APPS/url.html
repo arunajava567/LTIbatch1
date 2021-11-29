@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML5 URL Input Type</title>
+<style type="text/css">
+    input[type="url"]:valid{
+        outline: 2px solid green;
+    }
+    input[type="url"]:invalid{
+        outline: 2px solid red;
+    }
+</style>
+</head>
+<body>
+    <form>
+        <label>
+            Website URL: <input type="url" name="mywebsite" required>
+        </label>
+
+        <label>
+            Select Week: <input type="week" name="myweek">
+        </label>
+
+        <label for="file-select">Select File:</label>
+        <input type="file" name="upload" id="file-select">
+
+           <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+        </fieldset>
+
+
+
+ </form>
+    <p><strong>Note</strong>: Enter URL in the form like https://www.google.com</p>
+</body>
+</html>      
