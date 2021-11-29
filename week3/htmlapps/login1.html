@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script src="login.js"  type="text/javascript">
+
+function check() {
+   var x1=document.getElementById("a1");
+   var x2=document.getElementById("a2");
+  if(x1.length()<4)
+  alert("id should have more than 4 characters");
+  if(x2.length()<6)
+  alert("password should have more than 6 characters");
+
+
+}
+
+/*  internal or embedded js
+function  validate()
+  { //DOM 
+   if(document.f.id.value.length<4)
+     alert("id should be more than 4 characters");
+   if(document.f.pwd.value.length<6)
+     alert("password should be more than 6 characters");
+  }
+
+
+*/
+</script>
+</head>
+<body bgcolor=pink>
+ <form name=f>
+ <table border= 1 align=center bgcolor=cyan width=150 height=100>
+    <caption> LOGIN FORM</caption>
+
+  <tr><td> <label USER ID >UserID </label></td>  <td> <input class="c1"  id="a1" type=text name="id" required></td>  <tr>
+
+  <tr><td> <label Password >Password</label></td><td> <input class="c2" id="a2" type=password name="pwd" required ></td><tr>
+
+    <tr><td> <label Email >Email</label></td><td> <input  type=email name="email" required ></td><tr>
+    
+      <tr><td> <label contact >Contact</label></td><td> <input  type=number name="contact" required ></td><tr>
+    
+        <tr><td> <label dob >DOB</label></td><td> <input  type=date name="DOB" required ></td><tr>
+    
+
+  <tr><td>  <input type=submit value="Submit" onclick="check()">    
+ <td><input type=reset ></td>          <tr>
+
+</table>
+
+ </form>
+</body>
+</html>
+
+
+
+
+
+
