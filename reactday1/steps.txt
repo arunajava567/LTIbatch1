@@ -1,0 +1,17 @@
+node -v
+
+npm -v
+
+>npm install -g create-react-app  -> installing create-react-app  
+
+>create-react-app newApp  -> to create ne react application
+
+>cd newApp -> switch to newly created application
+
+>npm start -> to run react application
+
+>npm run build
+
+
+
+
