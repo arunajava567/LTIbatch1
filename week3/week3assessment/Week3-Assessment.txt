@@ -1,0 +1,17 @@
+Week 3  FrontEnd implementation:
+
+1.Create Angular Frontend single page application to communicate
+   with backend Banking  service application.
+
+2.Implement routing  for navigating between header componeet to 
+  Customer producer componnet and Customer Consumer component.
+
+3.Implement validation for all customer details like required,email etc.
+
+4.Implement HttpClient to connect API calls. 
+
+5.Implement custom services for Dependency Injection.
+
+6.Implement required modules like FormsModule,RoutingModule etc.
+
+Optional requirement : implement authentication module. =>
