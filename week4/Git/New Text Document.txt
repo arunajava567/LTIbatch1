@@ -1,0 +1,54 @@
+e:\md gitbranching
+
+gitbash
+
+$ cd e:\gitbranching
+
+$git add abc.txt 
+  or  to add all files in current folder
+$git init
+
+$touch abc.txt
+
+$git add .
+
+$git commit -m "comment1"
+
+$git commit
+
+$git status
+
+$git branch b1    // git checkout -b b1
+
+add a new file
+
+$git checkout b1
+
+$git add .
+
+$git commit -m "new chnages"
+
+$git checkout master
+
+$git log
+
+add some file to master
+$git add .
+
+$git commit -m "new chnages tomaster"
+
+===> you can observer by checking out to master and b1 branches and effect of changes in folder
+===> to merge
+$git merge b1    
+
+editor is opened      type comment  :wq
+
+===> you can observe  b1 branch files are merged to master
+
+Create another branch dummy
+
+$git checkout -b b1
+$git branch
+$git checkout master
+$git branch -d dummy
+
